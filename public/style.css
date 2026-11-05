@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #1d3557;
+}
+
+h2 {
+    color: #2563eb;
+}
+
+input, select {
+    padding: 12px;
+    margin: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #1d3557;
+    color: white;
+}
+
+.edit-btn {
+    background: green;
+}
+
+.delete-btn {
+    background: red;
+}

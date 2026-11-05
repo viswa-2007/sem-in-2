@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Details</h1>
+
+    <h2>Add Student Details</h2>
+
+    <form id="studentForm">
+        <input type="text" id="IdNo" placeholder="IdNo" required>
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="number" id="Marks" placeholder="Marks" required>
+        <input type="text" id="Department" placeholder="Department" required>
+        
+
+        <button type="submit" id="submitBtn">Add Student</button>
+        <button type="button" onclick="resetForm()">Clear</button>
+    </form>
+
+    <h2>Search Student</h2>
+
+    <input type="text" id="searchValue" placeholder="Enter Roll Number or Name">
+
+    <select id="searchType">
+        <option value="Id no">id no</option>
+        <option value="name">Name</option>
+    </select>
+
+    <button onclick="searchStudent()">Search</button>
+    <button onclick="loadStudents()">Show All</button>
+
+    <h2>Student Records</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Department</th>
+                
+            </tr>
+        </thead>
+
+        <tbody id="studentTable"></tbody>
+    </table>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
